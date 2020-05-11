@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <title>Number Guesser</title>
+  <style>
+    body{
+      background-color: cornflowerblue;
+    }
+    .container {
+      border: 2px solid #6d797a;
+      max-width: 500px;
+      padding: 20px;
+      border-radius: 30px;
+      text-align: center;
+      background-color: #cccccc;
+      margin-top: 100px;
+    }
+    #guess-btn{
+      background-color: cornflowerblue;
+      color: black;
+      border: black solid 1px;
+    }
+
+    #guess-input{
+      background-color:#ffffff;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Number Game</h2>
+    <div id="game">
+      <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+      <input type="number" id="guess-input" placeholder="Enter the guess">
+      <input type="submit" value="Guess" id="guess-btn">
+      <div class="message"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
